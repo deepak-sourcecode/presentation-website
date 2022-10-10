@@ -4,7 +4,7 @@
   --page-2-color: tan;
   --page-3-color: teal;
   --page-4-color: slateblue;
-  --animate-speed: 1s;
+  --animate-speed: 1.5s;
 }
 
 /* global styling */
@@ -71,4 +71,28 @@ body {
 .btn:hover {
   color: white;
   background-color: gray;
+}
+
+/* page-1 animation */
+#page-1 h1 {
+  transform: translateY(-1000px);
+  animation: heading var(--animate-speed) forwards ease-in;
+}
+
+/* keyframes page-1 */
+@keyframes heading {
+  to {
+    transform: translateY(0);
+  }
+}
+
+#page-1 p {
+  transform: translateX(-1000px);
+  animation: heading var(--animate-speed) forwards ease-in 1.5s;
+}
+
+@keyframes paragraph {
+  to {
+    transform: translateX(0);
+  }
 }
