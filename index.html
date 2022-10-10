@@ -15,12 +15,6 @@
     rel="stylesheet"
   />
 
-  <!-- font awesome -->
-  <script
-    src="https://kit.fontawesome.com/5e7d9f0110.js"
-    crossorigin="anonymous"
-  ></script>
-
   <!-- css -->
   <link rel="stylesheet" href="style.css" />
 
@@ -102,5 +96,34 @@
         </a>
       </div>
     </section>
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/5e7d9f0110.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jQuery cdn -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      // smooth scrolling
+      $(".btn").on("click", function (event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          const hash = this.hash;
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top,
+            },
+            600
+          );
+        }
+      });
+    </script>
   </body>
 </html>
