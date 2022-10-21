@@ -4,6 +4,7 @@
   --page-2-color: tan;
   --page-3-color: teal;
   --page-4-color: slateblue;
+  --page-5-color: mediumspringgreen;
   --animate-speed: 1.5s;
 }
 
@@ -33,6 +34,9 @@ body {
 }
 #page-4 {
   background-color: var(--page-4-color);
+}
+#page-5 {
+  background-color: var(--page-5-color);
 }
 
 /* page */
@@ -75,7 +79,7 @@ body {
 
 /* page-1 animation */
 #page-1 h1 {
-  transform: translateY(-1000px);
+  transform: translateY(-120vh);
   animation: heading var(--animate-speed) forwards ease-in;
 }
 
@@ -87,7 +91,7 @@ body {
 }
 
 #page-1 p {
-  transform: translateX(-1000px);
+  transform: translateX(-200vh);
   animation: heading var(--animate-speed) forwards ease-in 1.5s;
 }
 
